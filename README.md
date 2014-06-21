@@ -1,0 +1,2 @@
+OpenSuSE-mkinitramfs
+====================
