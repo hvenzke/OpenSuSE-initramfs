@@ -1,0 +1,20 @@
+#!/bin/sh
+# file : /sbin/mkdracutramfs
+# part of https://github.com/remsnet/OpenSuSE-initramfs
+#
+# v0.8 - june 2014
+# Author : Remsnet Consulting & internet Services LTD
+#          horst.venzke@remsnet.de
+# License : LGPL v2
+
+
+KERNEL_VERSION=`ls /boot/vmlinuz-* | xargs | awk -F " " '{ print $1 }' | sed "s#/boot/vmlinuz-##"`
+BOOT=/boot
+INITRAMFS_FILE=$BOOT/dracutinitramfs.img-$KERNEL_VERSION
+DATADIR=/usr/share/mkinitramfs
+INITIN=init.in
+CPIOBIN=/usr/bin/cpio
+GZIPBIN=/usr/bin/gzip
+
+
+dracut $INITRAMFS_FILE $KERNEL_VERSION
