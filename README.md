@@ -22,5 +22,6 @@ Files                             -      what purpuse
 ORIGN SOURCES & Ideas : 
 - http://www.linuxfromscratch.org/blfs/view/svn/postlfs/initramfs.html
 - http://jootamam.net/howto-initramfs-image.htm
+- http://landley.net/writing/rootfs-programming.html
 - https://access.redhat.com/site/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/sec-Verifying_the_Initial_RAM_Disk_Image.html
 - http://oreilly.com/linux/excerpts/9780596100797/kernel-boot-command-line-parameter-reference.html
